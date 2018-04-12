@@ -8,12 +8,6 @@ ansible --version
 echo "== == =="
 echo "Ansible configuration fiel:"
 cat /etc/ansible/ansible.cfg | grep -v "#" | grep -v -e '^$'
-echo "== == =="
-echo "ANSIBLE_ROLES_PATH"
-echo ${ANSIBLE_ROLES_PATH}
-sed -i s/#roles_path/roles_path/ /etc/ansible/ansible.cfg
+sudo sed -i s/#roles_path/roles_path/ /etc/ansible/ansible.cfg
 echo "Ansible configuration fiel:"
 cat /etc/ansible/ansible.cfg | grep -v "#" | grep -v -e '^$'
-echo "== == =="
-echo "ANSIBLE_ROLES_PATH"
-echo ${ANSIBLE_ROLES_PATH}
