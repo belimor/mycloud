@@ -6,8 +6,9 @@ sudo apt-get update
 sudo apt-get install -y ansible
 ansible --version
 echo "== == =="
-echo "Ansible configuration fiel:"
+echo "Ansible configuration file:"
 cat /etc/ansible/ansible.cfg | grep -v "#" | grep -v -e '^$'
 sudo sed -i s/#roles_path/roles_path/ /etc/ansible/ansible.cfg
-echo "Ansible configuration fiel:"
+echo "Ansible configuration file:"
 cat /etc/ansible/ansible.cfg | grep -v "#" | grep -v -e '^$'
+exec bash
