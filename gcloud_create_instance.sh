@@ -6,5 +6,7 @@ gcloud compute instances create ${my_instance_name} --machine-type g1-small --zo
 
 # Add tags if necessary:
 # e.g. --tags=jenkins
+echo ""
 
 gcloud compute instances list
+gcloud compute firewall-rules list
